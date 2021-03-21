@@ -6,3 +6,5 @@ for series in yakuza:
 	print(series.upper())
 
 print("Yakuza is the best game ever!")
+
+print("HELL YEAH!")
