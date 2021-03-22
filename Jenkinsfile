@@ -6,7 +6,13 @@ pipeline {
                 echo 'building the app'
             }
         }
-        stage('Test') { 
+        stage('Test') {
+	when {
+		expression{
+				BRANCH_NAME = 'feature_x'
+				}
+
+} 
             steps {
                 echo 'testing the app'
             }
